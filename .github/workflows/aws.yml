@@ -19,7 +19,7 @@ jobs:
           target: "/tmp/website"
 
       - name: deploy  into nginx
-        uses: appleboy/scp-action@v1
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST_IP }}
           username: ${{ secrets.AWS_USER }}
